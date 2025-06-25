@@ -7,6 +7,7 @@ public class MemoryManagement {
         memObj.memoryMaangementTest(perobj);
     }
 
+
     private void memoryMaangementTest(Person perobj) {
         Person perobj2 = perobj;
         String stringLiteral2 = "24";
