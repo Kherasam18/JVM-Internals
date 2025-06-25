@@ -39,8 +39,9 @@ public class ReferenceDemo {
         PhantomReference<MyObject> phantomRef = new PhantomReference<>(new MyObject("PhantomRef"), refQueue);
         System.out.println("Phantom reference always returns null: " + phantomRef.get());
 
+        // Suggest GC (no guarantee)
         System.out.println("Forcing GC");
-        System.gc(); // Suggest GC (no guarantee)
+        System.gc();
 
         // Allow time for GC to happen
         Thread.sleep(2000);
