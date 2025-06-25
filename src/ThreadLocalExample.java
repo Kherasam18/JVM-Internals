@@ -1,6 +1,6 @@
 public class ThreadLocalExample {
     // ThreadLocal variable: each thread will get its own copy
-    private static ThreadLocal<String> userName = new ThreadLocal<>();
+    private static final ThreadLocal<String> userName = new ThreadLocal<>();
 
     public static void main(String[] args) {
         Thread t1 = new Thread(() -> {
